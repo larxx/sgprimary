@@ -1,4 +1,3 @@
-export * from './Description'
 export * from './Features'
 export * from './HelloGuest'
 export * from './Hero'

@@ -46,7 +46,7 @@ export const Features = () => {
   return (
     <section
       css={`
-        padding: 0 0 5rem 0;
+        padding: 3rem 0 3rem 0;
       `}
     >
       <div
