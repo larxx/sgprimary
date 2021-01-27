@@ -171,7 +171,7 @@ export const Testimonials = () => {
       id: 8,
       name: 'Hunley Law',
       avatar: 'avatar9.png',
-      feedback: `This app is a gem. Can let my boys do it on their phone. Plus provide video explaination of answers. Where's the donation button???`,
+      feedback: `SG Primary provide an excellent fun way for Primary School kids in learning English, Maths and Mandarin through its quiz, MCQ, past exams. It's not only a great Apps for SG Primary School Kids, believe this Apps will also enhance other Asian Countries Primary School Kids in developing higher standard of education in English, Maths and Mandarin.`,
     },
   ])
 
