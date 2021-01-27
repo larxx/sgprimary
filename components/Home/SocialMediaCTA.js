@@ -6,6 +6,7 @@ import * as mq from 'styles/mediaQueries'
 const SectionHeading = styled.h2`
   font-size: 2.2rem;
   text-align: center;
+  margin-top: 0;
   span {
     color: var(--color-primary);
   }
@@ -25,7 +26,7 @@ export const SocialMediaCTA = () => {
   return (
     <section
       css={`
-        padding: 3rem 0 1rem 0;
+        padding: 3rem 0 3rem 0;
         ${mq.sm} {
           padding: 2rem 0;
         }

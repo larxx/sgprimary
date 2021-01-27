@@ -40,8 +40,8 @@ export default function Home() {
         <HelloGuest />
         <PromotionalVideo />
         <Testimonials />
-        <Sections />
         <SocialMediaCTA />
+        <Sections />
         <Support />
         <Questions />
       </Layout>
