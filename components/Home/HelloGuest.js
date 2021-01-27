@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Image from 'next/image'
 import styled from 'styled-components'
 import Container from '../Container'
 import * as mq from 'styles/mediaQueries'
@@ -113,7 +112,15 @@ export const HelloGuest = () => {
                 />
               </ImageContainer>
               <h3>{item.title}</h3>
-              <Button variant="secondary">SEE MORE</Button>
+              <Button variant="secondary">
+                <a
+                  href="https://sgprimary.org/app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SEE MORE
+                </a>
+              </Button>
             </GridItem>
           ))}
         </Grid>
