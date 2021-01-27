@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import Container from '../Container'
-import * as mq from 'styles/mediaQueries'
 import Button from 'components/Button'
+import * as mq from 'styles/mediaQueries'
 
 const StyledHelloGuest = styled.section`
   background: var(--color-primary);
   color: var(--white);
   padding: 5rem 0;
+  ${mq.sm} {
+    padding: 1rem 0;
+  }
 `
 
 const HeadingContainer = styled.div`
@@ -33,6 +36,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
+  padding-bottom: 1rem;
   ${mq.sm} {
     grid-template-columns: 1fr;
     gap: 2rem;

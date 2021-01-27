@@ -40,6 +40,9 @@ export const PromotionalVideo = () => {
     <section
       css={`
         padding: 5rem 0;
+        ${mq.sm} {
+          padding: 1rem 0;
+        }
       `}
     >
       <Container>

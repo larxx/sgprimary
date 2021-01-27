@@ -47,6 +47,9 @@ export const Features = () => {
     <section
       css={`
         padding: 3rem 0 3rem 0;
+        ${mq.sm} {
+          padding: 0;
+        }
       `}
     >
       <div

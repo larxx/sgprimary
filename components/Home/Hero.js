@@ -9,6 +9,9 @@ export const Hero = () => {
       css={`
         padding: 2rem 0 5rem 0;
         background: var(--color-primary);
+        ${mq.sm} {
+          padding: 2rem 0;
+        }
       `}
     >
       <Container>
@@ -34,7 +37,7 @@ export const Hero = () => {
             <h1
               css={`
                 color: var(--white);
-                font-size: 2.8rem;
+                font-size: 2.2rem;
                 font-weight: var(--fw-bold);
                 ${mq.sm} {
                   text-align: center;

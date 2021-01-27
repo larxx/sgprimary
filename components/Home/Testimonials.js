@@ -9,6 +9,10 @@ const StyledTestimonials = styled.section`
   padding: 5rem 0;
   background: var(--color-primary);
 
+  ${mq.sm} {
+    padding: 2rem 0;
+  }
+
   .embla {
     position: relative;
     padding: 0;
@@ -206,6 +210,7 @@ export const Testimonials = () => {
               margin: 0 auto;
               ${mq.sm} {
                 max-width: 100%;
+                font-size: 2rem;
               }
             `}
           >
