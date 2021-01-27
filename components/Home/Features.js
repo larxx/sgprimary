@@ -72,7 +72,7 @@ export const Features = () => {
             }
           `}
         >
-          HOW DOES IT WORK?
+          How does it work?
         </h2>
       </div>
       <Container>
