@@ -30,12 +30,13 @@ const SocialMediaBar = styled.div`
   background: var(--color-accent);
   a {
     font-weight: var(--fw-semibold);
-    transition: 0.2s color ease;
+    opacity: 87%;
+    transition: 0.2s all ease;
     :not(:last-child) {
       margin-right: 1rem;
     }
     &:hover {
-      color: var(--color-accent);
+      opacity: 100% !important;
     }
   }
   @media (max-width: 600px) {
