@@ -75,7 +75,13 @@ export const Support = () => {
                 margin-top: 1rem;
               `}
             >
-              Support Us
+              <a
+                href="https://sgprimary.org/login?referrer="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Support Us
+              </a>
             </Button>
           </SupportDetails>
           <ImageContainer>
