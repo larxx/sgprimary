@@ -42,11 +42,11 @@ export default function Home() {
         <HelloGuest />
         <PromotionalVideo />
         <Testimonials />
-        <SocialMediaCTA />
         <Plans />
         <Sections />
         <SupportedBy />
         <Support />
+        <SocialMediaCTA />
         <Questions />
       </Layout>
     </>

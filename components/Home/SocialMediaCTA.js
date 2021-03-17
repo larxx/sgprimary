@@ -27,6 +27,7 @@ export const SocialMediaCTA = () => {
     <section
       css={`
         padding: 3rem 0 3rem 0;
+        background: var(--offwhite);
         ${mq.sm} {
           padding: 2rem 0;
         }
@@ -48,8 +49,20 @@ export const SocialMediaCTA = () => {
               }
             `}
           >
-            Interested in learning what’s next for SG Primary? Follow us on our
-            social media channels to get the latest updates and educational
+            Want to stay informed about our latest content uploads?
+          </p>
+          <p
+            css={`
+              max-width: 45%;
+              text-align: center;
+              margin: 0 auto;
+              font-size: 1.2rem;
+              ${mq.sm} {
+                max-width: 100%;
+              }
+            `}
+          >
+            Follow us on social media to get real-time updates on educational
             content from the team!
           </p>
         </div>
