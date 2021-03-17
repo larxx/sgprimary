@@ -28,6 +28,21 @@ export default function Button({ children, css: otherCSS = {}, ...props }) {
             }
           `}
 
+        ${({ variant }) =>
+          variant === 'inverse' &&
+          css`
+            background: #000000;
+            color: var(--white);
+
+            a {
+              color: var(--white);
+            }
+
+            &:hover {
+              background: #000000;
+            }
+          `}
+
         {...otherCSS}
       `}
       {...props}

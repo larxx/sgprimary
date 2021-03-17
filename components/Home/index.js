@@ -1,6 +1,7 @@
 export * from './Features'
 export * from './HelloGuest'
 export * from './Hero'
+export * from './Plans'
 export * from './PromotionalVideo'
 export * from './Questions'
 export * from './Sections'

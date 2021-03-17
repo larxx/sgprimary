@@ -3,6 +3,7 @@ import {
   Features,
   Hero,
   HelloGuest,
+  Plans,
   PromotionalVideo,
   Questions,
   Sections,
@@ -42,6 +43,7 @@ export default function Home() {
         <PromotionalVideo />
         <Testimonials />
         <SocialMediaCTA />
+        <Plans />
         <Sections />
         <SupportedBy />
         <Support />
