@@ -61,13 +61,13 @@ export const Support = () => {
       <Container>
         <InnerSection>
           <SupportDetails>
-            <SectionHeading>Support SG Primary</SectionHeading>
+            <SectionHeading>You Can Support SG Primary Too!</SectionHeading>
             <SectionPara>
               Help us make quality education accessible to every child.
             </SectionPara>
             <SectionPara>
               Make a contribution to our platform so we can continue benefiting
-              more students and families with our free digital content!
+              more students and families with our digital content!
             </SectionPara>
             <Button
               variant="secondary"
