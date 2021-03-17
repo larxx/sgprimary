@@ -61,16 +61,20 @@ export const Questions = () => {
           <QuestionDetails>
             <SectionHeading>Have Questions?</SectionHeading>
             <SectionPara>
-              Want to find out how you can get started with our SG Primary
-              resources?
+              SG Primary was created with you in mind! And your opinion means a
+              lot to us.
             </SectionPara>
-            <SectionPara>Drop us an email at EMAILADDRESS today.</SectionPara>
+            <SectionPara>
+              We welcome your suggestions, questions, encouragements and even
+              enquiries on partnership arrangements.{' '}
+            </SectionPara>
+            <SectionPara>Drop us an email at hi@sgprimary.com.</SectionPara>
           </QuestionDetails>
           <ImageContainer>
             <Image
               src="/assets/images/questions.png"
-              width={370}
-              height={250}
+              width={550}
+              height={380}
             />
           </ImageContainer>
         </InnerSection>
