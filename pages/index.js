@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {
+  AdditionalSection,
   Features,
   Hero,
   HelloGuest,
@@ -42,6 +43,7 @@ export default function Home() {
         <HelloGuest />
         <PromotionalVideo />
         <Testimonials />
+        <AdditionalSection />
         <Plans />
         <Sections />
         <SupportedBy />
