@@ -149,11 +149,18 @@ export default function Header() {
                         <AiOutlineInstagram size="1.5rem" />
                       </a>
 
+                      <a href="#">Subscribe</a>
                       <a href="mailto:hi@sgprimary.com">Contact Us</a>
                     </SocialMediaBar>
                     <NavLinks>
                       <Link href="/">
                         <a>About Us</a>
+                      </Link>
+                      <Link href="/">
+                        <a>Subscription Plans</a>
+                      </Link>
+                      <Link href="/">
+                        <a>Reviews</a>
                       </Link>
                     </NavLinks>
                   </div>
