@@ -8,6 +8,7 @@ import {
   Sections,
   SocialMediaCTA,
   Support,
+  SupportedBy,
   Testimonials,
 } from 'components/Home'
 import Layout from 'components/Layout'
@@ -42,6 +43,7 @@ export default function Home() {
         <Testimonials />
         <SocialMediaCTA />
         <Sections />
+        <SupportedBy />
         <Support />
         <Questions />
       </Layout>
