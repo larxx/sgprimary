@@ -57,7 +57,7 @@ export const Hero = () => {
               `}
             >
               SG Primary is a free mobile/web app for easy learning & revision.
-              You get questions from the top schools’ papers, video lessons,
+              Get questions from the top schools’ papers, video lessons,
               automarking, and more.
             </p>
             <div
