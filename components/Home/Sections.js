@@ -128,8 +128,36 @@ export const Sections = () => {
                   }
                 `}
               >
-                SG Primary came about when a group of educational pros realised
-                the need for a communal resource to help children learn better.
+                SG Primary is a community initiative made possible with the
+                support of Our SG Fund & IMDA’s Digital Readiness programme.
+              </p>
+              <p
+                css={`
+                  font-size: 1.2rem;
+                  margin-bottom: 2rem;
+                  max-width: 80%;
+                  ${mq.sm} {
+                    text-align: center;
+                    max-width: 100%;
+                  }
+                `}
+              >
+                Our platform came about when a group of parents and educators
+                wanted to help families and children gain convenient access to
+                resources that could help them progress in their studies at
+                their own pace.
+              </p>
+              <p
+                css={`
+                  font-size: 1.2rem;
+                  margin-bottom: 2rem;
+                  max-width: 80%;
+                  ${mq.sm} {
+                    text-align: center;
+                    max-width: 100%;
+                  }
+                `}
+              >
                 Today, we’ve formed a community of teachers, parents, and
                 students alike who continue to power this resource.
               </p>
@@ -205,9 +233,23 @@ export const Sections = () => {
                   }
                 `}
               >
-                Our goal has always been to form an active community of people
-                who both share and acquire knowledge. That’s why we continue to
-                make the best learning resources available to anyone, anywhere.
+                Our goal has always been to form an active community of impact
+                makers who will help each other on their learning journey,
+                maximising every individual’s potential.
+              </p>
+              <p
+                css={`
+                  font-size: 1.2rem;
+                  margin-bottom: 2rem;
+                  max-width: 80%;
+                  ${mq.sm} {
+                    text-align: center;
+                    max-width: 100%;
+                  }
+                `}
+              >
+                That’s why we do our best to make learning resources available
+                to anyone, anywhere.
               </p>
             </div>
           </InnerSection>
