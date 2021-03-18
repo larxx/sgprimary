@@ -39,6 +39,9 @@ const FeatureNumIcon = styled.div`
 const FeatureTitle = styled.h3`
   text-align: center;
   font-size: 0.875rem;
+  ${mq.sm} {
+    font-size: 1rem;
+  }
 `
 
 export const Features = () => {
