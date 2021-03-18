@@ -43,6 +43,10 @@ const PlansHeader = styled.div`
       max-width: 100%;
     }
   }
+
+  ${mq.sm} {
+    padding: 0 1rem;
+  }
 `
 
 const PlansGrid = styled.div`
@@ -259,7 +263,15 @@ export const Plans = () => {
   return (
     <>
       <StyledPlans name="plans">
-        <Container>
+        <Container
+          css={`
+            ${mq.sm} {
+              max-width: 100%;
+              width: 100%;
+              padding: 0;
+            }
+          `}
+        >
           <PlansHeader>
             <SectionHeading>Want More?</SectionHeading>
             <p>
@@ -288,64 +300,73 @@ export const Plans = () => {
               </PriceContainer>
               <PlanFeatures features={basicFeatures} />
               {isMobile ? (
-                <BonusGridItem mobile>
-                  <div className="bonus-item-tag">
-                    <img
-                      src="/assets/icons/free-bonus-badge.png"
-                      alt="free bonus"
-                    />
-                  </div>
-                  <StyledPlanFeatures>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
-                      </div>
-                      <span className="feature-item-text">
-                        Automark Cloze Passages
-                      </span>
+                <div
+                  css={`
+                    width: 100%;
+                    padding: 0.5rem 0 2rem 0;
+                    background: var(--color-primary);
+                    margin-top: 1.5rem;
+                  `}
+                >
+                  <BonusGridItem mobile>
+                    <div className="bonus-item-tag">
+                      <img
+                        src="/assets/icons/free-bonus-badge.png"
+                        alt="free bonus"
+                      />
                     </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                    <StyledPlanFeatures>
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Cloze Passages
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Automark Math Problem Sums
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/x-icon.png" alt="x" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Math Problem Sums
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        2000+ Math Explainer Videos
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/x-icon.png" alt="x" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/x-icon.png" alt="x" />
+                        </div>
+                        <span className="feature-item-text">
+                          2000+ Math Explainer Videos
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Topic Strength & Weakness Analysis
-                      </span>
-                    </div>
-                  </StyledPlanFeatures>
-                  <Button
-                    variant="inverse"
-                    css={`
-                      margin-top: 1.5rem;
-                      padding: 10px 20px;
-                      border-radius: 10px;
-                    `}
-                  >
-                    <a
-                      href=" http://sgprimary.org/app"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/x-icon.png" alt="x" />
+                        </div>
+                        <span className="feature-item-text">
+                          Topic Strength & Weakness Analysis
+                        </span>
+                      </div>
+                    </StyledPlanFeatures>
+                    <Button
+                      variant="inverse"
+                      css={`
+                        margin-top: 1.5rem;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                      `}
                     >
-                      SUBSCRIBE NOW
-                    </a>
-                  </Button>
-                </BonusGridItem>
+                      <a
+                        href=" http://sgprimary.org/app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SUBSCRIBE NOW
+                      </a>
+                    </Button>
+                  </BonusGridItem>
+                </div>
               ) : null}
             </PlanItem>
             <PlanItem>
@@ -363,64 +384,73 @@ export const Plans = () => {
               </PriceContainer>
               <PlanFeatures features={plusFeatures} />
               {isMobile ? (
-                <BonusGridItem mobile>
-                  <div className="bonus-item-tag">
-                    <img
-                      src="/assets/icons/free-bonus-badge.png"
-                      alt="free bonus"
-                    />
-                  </div>
-                  <StyledPlanFeatures>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
-                      </div>
-                      <span className="feature-item-text">
-                        Automark Cloze Passages
-                      </span>
+                <div
+                  css={`
+                    width: 100%;
+                    padding: 0.5rem 0 2rem 0;
+                    background: var(--color-primary);
+                    margin-top: 1.5rem;
+                  `}
+                >
+                  <BonusGridItem mobile>
+                    <div className="bonus-item-tag">
+                      <img
+                        src="/assets/icons/free-bonus-badge.png"
+                        alt="free bonus"
+                      />
                     </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                    <StyledPlanFeatures>
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Cloze Passages
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Automark Math Problem Sums
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Math Problem Sums
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        2000+ Math Explainer Videos
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/x-icon.png" alt="x" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          2000+ Math Explainer Videos
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Topic Strength & Weakness Analysis
-                      </span>
-                    </div>
-                  </StyledPlanFeatures>
-                  <Button
-                    variant="inverse"
-                    css={`
-                      margin-top: 1.5rem;
-                      padding: 10px 20px;
-                      border-radius: 10px;
-                    `}
-                  >
-                    <a
-                      href=" http://sgprimary.org/app"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/x-icon.png" alt="x" />
+                        </div>
+                        <span className="feature-item-text">
+                          Topic Strength & Weakness Analysis
+                        </span>
+                      </div>
+                    </StyledPlanFeatures>
+                    <Button
+                      variant="inverse"
+                      css={`
+                        margin-top: 1.5rem;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                      `}
                     >
-                      SUBSCRIBE NOW
-                    </a>
-                  </Button>
-                </BonusGridItem>
+                      <a
+                        href=" http://sgprimary.org/app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SUBSCRIBE NOW
+                      </a>
+                    </Button>
+                  </BonusGridItem>
+                </div>
               ) : null}
             </PlanItem>
             <PlanItem>
@@ -435,252 +465,79 @@ export const Plans = () => {
               </PriceContainer>
               <PlanFeatures features={proFeatures} />
               {isMobile ? (
-                <BonusGridItem mobile>
-                  <div className="bonus-item-tag">
-                    <img
-                      src="/assets/icons/free-bonus-badge.png"
-                      alt="free bonus"
-                    />
-                  </div>
-                  <StyledPlanFeatures>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
-                      </div>
-                      <span className="feature-item-text">
-                        Automark Cloze Passages
-                      </span>
+                <div
+                  css={`
+                    width: 100%;
+                    padding: 0.5rem 0 2rem 0;
+                    background: var(--color-primary);
+                    margin-top: 1.5rem;
+                  `}
+                >
+                  <BonusGridItem mobile>
+                    <div className="bonus-item-tag">
+                      <img
+                        src="/assets/icons/free-bonus-badge.png"
+                        alt="free bonus"
+                      />
                     </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                    <StyledPlanFeatures>
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Cloze Passages
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Automark Math Problem Sums
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Automark Math Problem Sums
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        2000+ Math Explainer Videos
-                      </span>
-                    </div>
-                    <div className="feature-item">
-                      <div className="feature-item-img">
-                        <img src="/assets/icons/check-icon.png" alt="check" />
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          2000+ Math Explainer Videos
+                        </span>
                       </div>
-                      <span className="feature-item-text">
-                        Topic Strength & Weakness Analysis
-                      </span>
-                    </div>
-                  </StyledPlanFeatures>
-                  <Button
-                    variant="inverse"
-                    css={`
-                      margin-top: 1.5rem;
-                      padding: 10px 20px;
-                      border-radius: 10px;
-                    `}
-                  >
-                    <a
-                      href=" http://sgprimary.org/app"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      <div className="feature-item">
+                        <div className="feature-item-img">
+                          <img src="/assets/icons/check-icon.png" alt="check" />
+                        </div>
+                        <span className="feature-item-text">
+                          Topic Strength & Weakness Analysis
+                        </span>
+                      </div>
+                    </StyledPlanFeatures>
+                    <Button
+                      variant="inverse"
+                      css={`
+                        margin-top: 1.5rem;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                      `}
                     >
-                      SUBSCRIBE NOW
-                    </a>
-                  </Button>
-                </BonusGridItem>
+                      <a
+                        href=" http://sgprimary.org/app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SUBSCRIBE NOW
+                      </a>
+                    </Button>
+                  </BonusGridItem>
+                </div>
               ) : null}
             </PlanItem>
           </PlansGrid>
         </Container>
       </StyledPlans>
       <BonusPlans />
-      {/* {!isMobile ? (
-        <StyledBonusPlans>
-          <Container>
-            <BonusGrid>
-              <BonusGridItem>
-                <div className="bonus-item-tag">
-                  <img
-                    src="/assets/icons/free-bonus-badge.png"
-                    alt="free bonus"
-                  />
-                </div>
-                <StyledPlanFeatures>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Cloze Passages
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Math Problem Sums
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/x-icon.png" alt="x" />
-                    </div>
-                    <span className="feature-item-text">
-                      2000+ Math Explainer Videos
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/x-icon.png" alt="x" />
-                    </div>
-                    <span className="feature-item-text">
-                      Topic Strength & Weakness Analysis
-                    </span>
-                  </div>
-                </StyledPlanFeatures>
-                <Button
-                  variant="inverse"
-                  css={`
-                    margin-top: 1.5rem;
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                  `}
-                >
-                  <a
-                    href=" http://sgprimary.org/app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    SUBSCRIBE NOW
-                  </a>
-                </Button>
-              </BonusGridItem>
-              <BonusGridItem>
-                <div className="bonus-item-tag">
-                  <img
-                    src="/assets/icons/free-bonus-badge.png"
-                    alt="free bonus"
-                  />
-                </div>
-                <StyledPlanFeatures>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Cloze Passages
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Math Problem Sums
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      2000+ Math Explainer Videos
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/x-icon.png" alt="x" />
-                    </div>
-                    <span className="feature-item-text">
-                      Topic Strength & Weakness Analysis
-                    </span>
-                  </div>
-                </StyledPlanFeatures>
-                <Button
-                  variant="inverse"
-                  css={`
-                    margin-top: 1.5rem;
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                  `}
-                >
-                  <a
-                    href=" http://sgprimary.org/app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    SUBSCRIBE NOW
-                  </a>
-                </Button>
-              </BonusGridItem>
-              <BonusGridItem>
-                <div className="bonus-item-tag">
-                  <img
-                    src="/assets/icons/free-bonus-badge.png"
-                    alt="free bonus"
-                  />
-                </div>
-                <StyledPlanFeatures>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Cloze Passages
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Automark Math Problem Sums
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      2000+ Math Explainer Videos
-                    </span>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-item-img">
-                      <img src="/assets/icons/check-icon.png" alt="check" />
-                    </div>
-                    <span className="feature-item-text">
-                      Topic Strength & Weakness Analysis
-                    </span>
-                  </div>
-                </StyledPlanFeatures>
-                <Button
-                  variant="inverse"
-                  css={`
-                    margin-top: 1.5rem;
-                    padding: 10px 20px;
-                    border-radius: 10px;
-                  `}
-                >
-                  <a
-                    href=" http://sgprimary.org/app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    SUBSCRIBE NOW
-                  </a>
-                </Button>
-              </BonusGridItem>
-            </BonusGrid>
-          </Container>
-        </StyledBonusPlans>
-      ) : null} */}
     </>
   )
 }
