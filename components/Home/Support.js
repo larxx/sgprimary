@@ -76,7 +76,7 @@ export const Support = () => {
               `}
             >
               <a
-                href="https://sgprimary.org/login?referrer="
+                href="https://sgprimary.org/support-us"
                 target="_blank"
                 rel="noopener noreferrer"
               >

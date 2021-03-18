@@ -348,7 +348,11 @@ export const Plans = () => {
                       border-radius: 10px;
                     `}
                   >
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href=" http://sgprimary.org/app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       SUBSCRIBE NOW
                     </a>
                   </Button>
@@ -419,7 +423,11 @@ export const Plans = () => {
                       border-radius: 10px;
                     `}
                   >
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href=" http://sgprimary.org/app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       SUBSCRIBE NOW
                     </a>
                   </Button>
@@ -487,7 +495,11 @@ export const Plans = () => {
                       border-radius: 10px;
                     `}
                   >
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href=" http://sgprimary.org/app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       SUBSCRIBE NOW
                     </a>
                   </Button>
@@ -550,7 +562,11 @@ export const Plans = () => {
                     border-radius: 10px;
                   `}
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href=" http://sgprimary.org/app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     SUBSCRIBE NOW
                   </a>
                 </Button>
@@ -604,7 +620,11 @@ export const Plans = () => {
                     border-radius: 10px;
                   `}
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href=" http://sgprimary.org/app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     SUBSCRIBE NOW
                   </a>
                 </Button>
@@ -658,7 +678,11 @@ export const Plans = () => {
                     border-radius: 10px;
                   `}
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href=" http://sgprimary.org/app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     SUBSCRIBE NOW
                   </a>
                 </Button>
