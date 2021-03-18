@@ -1,7 +1,45 @@
 import { useState } from 'react'
-import Image from 'next/image'
+import styled from 'styled-components'
 import Container from '../Container'
 import * as mq from 'styles/mediaQueries'
+
+const FeatureItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+`
+
+const FeatureImage = styled.div`
+  width: 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+`
+
+const FeatureNumIcon = styled.div`
+  width: 36px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${mq.sm} {
+    width: 40px;
+    margin-top: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+`
+
+const FeatureTitle = styled.h3`
+  text-align: center;
+  font-size: 0.875rem;
+`
 
 export const Features = () => {
   const [features, _] = useState([
@@ -87,60 +125,15 @@ export const Features = () => {
           `}
         >
           {features.map((feature, i) => (
-            <div
-              key={feature.id}
-              css={`
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-              `}
-            >
-              <div
-                css={`
-                  width: 120px;
-                `}
-              >
-                <Image
-                  src={feature.image}
-                  layout="responsive"
-                  width={50}
-                  height={50}
-                  alt={feature.title}
-                />
-              </div>
-              <div
-                css={`
-                  width: 36px;
-                  margin-top: 10px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  ${mq.sm} {
-                    width: 40px;
-                    margin-top: 0;
-                  }
-                `}
-              >
-                <img
-                  src={feature.numIcon}
-                  alt="num icon"
-                  css={`
-                    width: 100%;
-                    height: auto;
-                  `}
-                />
-              </div>
-              <h3
-                css={`
-                  text-align: center;
-                  font-size: 0.875rem;
-                  /* margin-top: -20px; */
-                `}
-              >
-                {feature.title}
-              </h3>
-            </div>
+            <FeatureItem key={feature.id}>
+              <FeatureImage>
+                <img src={feature.image} alt={feature.title} />
+              </FeatureImage>
+              <FeatureNumIcon>
+                <img src={feature.numIcon} alt="num icon" />
+              </FeatureNumIcon>
+              <FeatureTitle>{feature.title}</FeatureTitle>
+            </FeatureItem>
           ))}
         </div>
         <div
