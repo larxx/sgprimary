@@ -159,13 +159,13 @@ export default function Header() {
                         smooth={true}
                         offset={-100}
                       >
-                        <a
+                        <span
                           css={`
                             cursor: pointer;
                           `}
                         >
                           About Us
-                        </a>
+                        </span>
                       </ScrollLink>
                       <ScrollLink
                         href="/"
@@ -174,13 +174,13 @@ export default function Header() {
                         smooth={true}
                         offset={-100}
                       >
-                        <a
+                        <span
                           css={`
                             cursor: pointer;
                           `}
                         >
                           Subscription Plans
-                        </a>
+                        </span>
                       </ScrollLink>
                       <ScrollLink
                         href="/"
@@ -189,13 +189,13 @@ export default function Header() {
                         smooth={true}
                         offset={-100}
                       >
-                        <a
+                        <span
                           css={`
                             cursor: pointer;
                           `}
                         >
                           Reviews
-                        </a>
+                        </span>
                       </ScrollLink>
                     </NavLinks>
                   </div>

@@ -5,6 +5,10 @@ import styled from 'styled-components'
 import Button from 'components/Button'
 import Container from 'components/Container'
 import * as mq from 'styles/mediaQueries'
+import { BonusPlans } from './BonusPlans'
+
+// const Container = dynamic(() => import('../Container'))
+// const Button = dynamic(() => import('../Button'))
 
 const StyledPlans = styled.section`
   padding: 5rem 0;
@@ -83,7 +87,7 @@ const PriceContainer = styled.div`
   }
 `
 
-const StyledPlanFeatures = styled.div`
+export const StyledPlanFeatures = styled.div`
   margin-top: 1rem;
 
   .feature-item {
@@ -107,22 +111,7 @@ const StyledPlanFeatures = styled.div`
   }
 `
 
-const StyledBonusPlans = styled.section`
-  background: var(--color-primary);
-  padding-bottom: 5rem;
-`
-
-const BonusGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-  margin-top: 0;
-  ${mq.sm} {
-    grid-template-columns: 1fr;
-  }
-`
-
-const BonusGridItem = styled.div`
+export const BonusGridItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,14 +137,14 @@ const PlanFeatures = ({ features }) => {
     <StyledPlanFeatures>
       {features.map(feature => {
         return feature.type === 'check' ? (
-          <div className="feature-item">
+          <div className="feature-item" key={feature.id}>
             <div className="feature-item-img">
               <img src="/assets/icons/check-icon.png" alt="check" />
             </div>
             <span className="feature-item-text">{feature.text}</span>
           </div>
         ) : (
-          <div className="feature-item">
+          <div className="feature-item" key={feature.id}>
             <div className="feature-item-img">
               <img src="/assets/icons/x-icon.png" alt="x" />
             </div>
@@ -509,7 +498,8 @@ export const Plans = () => {
           </PlansGrid>
         </Container>
       </StyledPlans>
-      {!isMobile ? (
+      <BonusPlans />
+      {/* {!isMobile ? (
         <StyledBonusPlans>
           <Container>
             <BonusGrid>
@@ -690,7 +680,7 @@ export const Plans = () => {
             </BonusGrid>
           </Container>
         </StyledBonusPlans>
-      ) : null}
+      ) : null} */}
     </>
   )
 }

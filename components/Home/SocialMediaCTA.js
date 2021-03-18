@@ -26,10 +26,10 @@ export const SocialMediaCTA = () => {
   return (
     <section
       css={`
-        padding: 3rem 0 3rem 0;
+        padding: 3rem 0;
         background: var(--offwhite);
         ${mq.sm} {
-          padding: 2rem 0;
+          padding: 5rem 0;
         }
       `}
     >
