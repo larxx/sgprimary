@@ -198,7 +198,7 @@ export const Testimonials = () => {
   }, [embla, onSelect])
 
   return (
-    <StyledTestimonials>
+    <StyledTestimonials name="reviews">
       <Container>
         <div>
           <h2

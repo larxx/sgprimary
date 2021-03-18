@@ -269,7 +269,7 @@ export const Plans = () => {
 
   return (
     <>
-      <StyledPlans>
+      <StyledPlans name="plans">
         <Container>
           <PlansHeader>
             <SectionHeading>Want More?</SectionHeading>

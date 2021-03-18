@@ -7,6 +7,7 @@ import {
   AiOutlineInstagram,
   AiOutlineMenu,
 } from 'react-icons/ai'
+import { Link as ScrollLink } from 'react-scroll'
 import Container from './Container'
 import NavDrawer from './NavDrawer'
 import { useNavDrawer } from 'context/NavDrawerContext'
@@ -149,19 +150,53 @@ export default function Header() {
                         <AiOutlineInstagram size="1.5rem" />
                       </a>
 
-                      <a href="#">Subscribe</a>
                       <a href="mailto:hi@sgprimary.com">Contact Us</a>
                     </SocialMediaBar>
                     <NavLinks>
-                      <Link href="/">
-                        <a>About Us</a>
-                      </Link>
-                      <Link href="/">
-                        <a>Subscription Plans</a>
-                      </Link>
-                      <Link href="/">
-                        <a>Reviews</a>
-                      </Link>
+                      <ScrollLink
+                        activeClass="active"
+                        to="about"
+                        smooth={true}
+                        offset={-100}
+                      >
+                        <a
+                          css={`
+                            cursor: pointer;
+                          `}
+                        >
+                          About Us
+                        </a>
+                      </ScrollLink>
+                      <ScrollLink
+                        href="/"
+                        activeClass="active"
+                        to="plans"
+                        smooth={true}
+                        offset={-100}
+                      >
+                        <a
+                          css={`
+                            cursor: pointer;
+                          `}
+                        >
+                          Subscription Plans
+                        </a>
+                      </ScrollLink>
+                      <ScrollLink
+                        href="/"
+                        activeClass="active"
+                        to="reviews"
+                        smooth={true}
+                        offset={-100}
+                      >
+                        <a
+                          css={`
+                            cursor: pointer;
+                          `}
+                        >
+                          Reviews
+                        </a>
+                      </ScrollLink>
                     </NavLinks>
                   </div>
                 )}
