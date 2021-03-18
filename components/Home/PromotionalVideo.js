@@ -62,7 +62,7 @@ export const PromotionalVideo = () => {
           `}
         >
           <Vid controls>
-            <source src="/assets/videos/demo.mov" />
+            <source src="/assets/videos/demo2.mp4" />
           </Vid>
         </div>
         <div>
