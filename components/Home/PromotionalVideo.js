@@ -61,7 +61,7 @@ export const PromotionalVideo = () => {
             padding: 2rem 0;
           `}
         >
-          <Vid controls>
+          <Vid controls poster="https://i.postimg.cc/Z54hdjgG/image.png">
             <source src="/assets/videos/demo2.mp4" />
           </Vid>
         </div>
