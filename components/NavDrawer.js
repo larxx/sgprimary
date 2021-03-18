@@ -4,7 +4,9 @@ import {
   AiOutlineMail,
 } from 'react-icons/ai'
 import styled, { css } from 'styled-components'
+import { Link as ScrollLink } from 'react-scroll'
 import Container from './Container'
+import { useNavDrawer } from 'context/NavDrawerContext'
 
 const StyledNavDrawer = styled.div`
   position: fixed;
@@ -26,6 +28,8 @@ const StyledNavDrawer = styled.div`
 `
 
 export default function NavDrawer({ toggled }) {
+  const [isOpen, setIsOpen] = useNavDrawer()
+
   return (
     <StyledNavDrawer toggled={toggled}>
       <div
@@ -55,6 +59,7 @@ export default function NavDrawer({ toggled }) {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                text-align: center;
                 width: 150px;
                 padding: 1rem 0;
                 transition: 0.2s opacity ease;
@@ -120,6 +125,57 @@ export default function NavDrawer({ toggled }) {
                 Instagram
               </span>
             </a>
+            <ScrollLink
+              activeClass="active"
+              to="about"
+              smooth={true}
+              offset={-100}
+            >
+              <span
+                css={`
+                  display: block;
+                  width: 100%;
+                  cursor: pointer;
+                `}
+                onClick={() => setIsOpen(false)}
+              >
+                About Us
+              </span>
+            </ScrollLink>
+            <ScrollLink
+              activeClass="active"
+              to="plans"
+              smooth={true}
+              offset={-100}
+            >
+              <span
+                css={`
+                  display: block;
+                  width: 100%;
+                  cursor: pointer;
+                `}
+                onClick={() => setIsOpen(false)}
+              >
+                Subscription Plans
+              </span>
+            </ScrollLink>
+            <ScrollLink
+              activeClass="active"
+              to="reviews"
+              smooth={true}
+              offset={-100}
+            >
+              <span
+                css={`
+                  display: block;
+                  width: 100%;
+                  cursor: pointer;
+                `}
+                onClick={() => setIsOpen(false)}
+              >
+                Reviews
+              </span>
+            </ScrollLink>
             {/* </div> */}
           </div>
         </Container>
