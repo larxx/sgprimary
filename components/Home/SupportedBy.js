@@ -44,6 +44,7 @@ const SupportItem = styled.div`
 
   .support-item-title {
     font-weight: var(--fw-semibold);
+    text-align: center;
   }
 
   .support-item-quote {
