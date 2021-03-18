@@ -27,6 +27,32 @@ const StyledNavDrawer = styled.div`
     `}
 `
 
+const LinksContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 1.2rem;
+    width: 180px;
+    padding: 1rem 0;
+    transition: 0.2s opacity ease;
+    color: var(--offwhite);
+    opacity: 87%;
+    &:hover {
+      opacity: 100%;
+    }
+  }
+`
+
 export default function NavDrawer({ toggled }) {
   const [isOpen, setIsOpen] = useNavDrawer()
 
@@ -34,151 +60,53 @@ export default function NavDrawer({ toggled }) {
     <StyledNavDrawer toggled={toggled}>
       <div
         css={`
-          margin-top: 6rem;
-          /* background: coral; */
+          margin-top: 10rem;
           width: 100%;
         `}
       >
-        <Container>
-          {/* <h3
-            css={`
-              color: var(--white);
-            `}
+        {/* <Container> */}
+        <LinksContainer>
+          <ScrollLink
+            activeClass="active"
+            to="about"
+            smooth={true}
+            offset={-100}
           >
-            Menu
-          </h3> */}
-          <div
-            css={`
-              display: flex;
-              width: 100%;
-              height: 100%;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-start;
-              a {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                text-align: center;
-                width: 150px;
-                padding: 1rem 0;
-                transition: 0.2s opacity ease;
-                color: var(--offwhite);
-                opacity: 87%;
-                &:hover {
-                  opacity: 100%;
-                }
-              }
-            `}
+            <span onClick={() => setIsOpen(false)}>About Us</span>
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active"
+            to="plans"
+            smooth={true}
+            offset={-100}
           >
-            <a href="mailto:hi@sgprimary.com">
-              <AiOutlineMail size="2.8rem" />
-              <span
-                css={`
-                  display: inline-block;
-                  margin-left: 1rem;
-                `}
-              >
-                Contact Us
-              </span>
-            </a>
-            {/* <div
-              css={`
-                order: 1;
-                display: flex;
-                align-items: center;
-                a {
-                  display: inline-block;
-                  :not(:first-child) {
-                    margin-left: 1rem;
-                  }
-                }
-              `}
-            > */}
-            <a
-              href="https://www.facebook.com/SGPrimary.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillFacebook size="2.8rem" />
-              <span
-                css={`
-                  display: inline-block;
-                  margin-left: 1rem;
-                `}
-              >
-                Facebook
-              </span>
-            </a>
-            <a
-              href="https://www.instagram.com/sgprimary/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiOutlineInstagram size="2.8rem" />
-              <span
-                css={`
-                  display: inline-block;
-                  margin-left: 1rem;
-                `}
-              >
-                Instagram
-              </span>
-            </a>
-            <ScrollLink
-              activeClass="active"
-              to="about"
-              smooth={true}
-              offset={-100}
-            >
-              <span
-                css={`
-                  display: block;
-                  width: 100%;
-                  cursor: pointer;
-                `}
-                onClick={() => setIsOpen(false)}
-              >
-                About Us
-              </span>
-            </ScrollLink>
-            <ScrollLink
-              activeClass="active"
-              to="plans"
-              smooth={true}
-              offset={-100}
-            >
-              <span
-                css={`
-                  display: block;
-                  width: 100%;
-                  cursor: pointer;
-                `}
-                onClick={() => setIsOpen(false)}
-              >
-                Subscription Plans
-              </span>
-            </ScrollLink>
-            <ScrollLink
-              activeClass="active"
-              to="reviews"
-              smooth={true}
-              offset={-100}
-            >
-              <span
-                css={`
-                  display: block;
-                  width: 100%;
-                  cursor: pointer;
-                `}
-                onClick={() => setIsOpen(false)}
-              >
-                Reviews
-              </span>
-            </ScrollLink>
-            {/* </div> */}
-          </div>
-        </Container>
+            <span onClick={() => setIsOpen(false)}>Subscription Plans</span>
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active"
+            to="reviews"
+            smooth={true}
+            offset={-100}
+          >
+            <span onClick={() => setIsOpen(false)}>Reviews</span>
+          </ScrollLink>
+          <a href="mailto:hi@sgprimary.com">Contact Us</a>
+          <a
+            href="https://www.facebook.com/SGPrimary.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/sgprimary/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </LinksContainer>
+        {/* </Container> */}
       </div>
     </StyledNavDrawer>
   )
