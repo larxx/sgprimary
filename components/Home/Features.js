@@ -13,34 +13,34 @@ export const Features = () => {
     },
     {
       id: 2,
-      title: 'The app marks your answers.',
+      title: 'Marking of answers on the app.',
       image: '/assets/icons/f2.png',
       numIcon: '/assets/icons/num2.png',
     },
     {
       id: 3,
-      title: 'Solutions provided where needed.',
+      title: 'Solutions provided.',
       image: '/assets/icons/f3.png',
       numIcon: '/assets/icons/num3.png',
     },
     {
       id: 4,
-      title: 'Bookmark questions for revision/reference.',
+      title: 'Video tutorials for additional explanation.',
       image: '/assets/icons/f4.png',
       numIcon: '/assets/icons/num4.png',
     },
     {
       id: 5,
-      title: 'Video tutorials offer extra explanations.',
-      image: '/assets/icons/f5.png',
+      title: 'Track progress to better identify and close knowledge gaps',
+      image: '/assets/icons/f6.png',
       numIcon: '/assets/icons/num5.png',
     },
-    {
-      id: 6,
-      title: 'Let kids compete with friends in quiz battles.',
-      image: '/assets/icons/f6.png',
-      numIcon: '/assets/icons/num6.png',
-    },
+    // {
+    //   id: 6,
+    //   title: 'Let kids compete with friends in quiz battles.',
+    //   image: '/assets/icons/f6.png',
+    //   numIcon: '/assets/icons/num6.png',
+    // },
   ])
 
   return (
