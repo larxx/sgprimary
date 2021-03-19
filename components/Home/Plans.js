@@ -7,9 +7,6 @@ import Container from 'components/Container'
 import * as mq from 'styles/mediaQueries'
 import { BonusPlans } from './BonusPlans'
 
-// const Container = dynamic(() => import('../Container'))
-// const Button = dynamic(() => import('../Button'))
-
 const StyledPlans = styled.section`
   padding: 5rem 0;
   background: var(--offwhite);

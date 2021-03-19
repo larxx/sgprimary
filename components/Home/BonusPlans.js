@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useMediaQuery } from 'react-responsive'
 import Container from 'components/Container'
 import Button from 'components/Button'
 import { BonusGridItem, StyledPlanFeatures } from './Plans'

@@ -1,11 +1,5 @@
-import {
-  AiFillFacebook,
-  AiOutlineInstagram,
-  AiOutlineMail,
-} from 'react-icons/ai'
 import styled, { css } from 'styled-components'
 import { Link as ScrollLink } from 'react-scroll'
-import Container from './Container'
 import { useNavDrawer } from 'context/NavDrawerContext'
 
 const StyledNavDrawer = styled.div`
@@ -42,6 +36,8 @@ const LinksContainer = styled.div`
     text-align: center;
     font-family: 'Quicksand';
     font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    cursor: pointer;
     width: 180px;
     padding: 1rem 0;
     transition: 0.2s opacity ease;
