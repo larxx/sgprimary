@@ -42,9 +42,9 @@ const StyledTestimonials = styled.section`
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    margin-left: -160px;
+    margin-left: -10px;
     ${mq.sm} {
-      margin-left: -95px;
+      margin-left: -90px;
     }
   }
 
@@ -53,8 +53,8 @@ const StyledTestimonials = styled.section`
     min-width: 500px;
     margin: 0 2rem;
     ${mq.sm} {
-      min-width: 250px;
-      margin: 0 1rem;
+      min-width: 220px;
+      margin: 0 5px;
     }
   }
 
