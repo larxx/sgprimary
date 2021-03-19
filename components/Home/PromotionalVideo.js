@@ -32,6 +32,7 @@ const Vid = styled.video`
   height: 350px;
   ${mq.sm} {
     width: 100%;
+    height: 240px;
   }
 `
 
@@ -58,7 +59,7 @@ export const PromotionalVideo = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 2rem 0;
+            padding: 0 0 2rem 0;
           `}
         >
           <Vid controls poster="https://i.postimg.cc/Z54hdjgG/image.png">
