@@ -111,7 +111,7 @@ export default function Header() {
               <Link href="/" passHref>
                 <a>
                   <img
-                    src="/logo.png"
+                    src="/logo2.png"
                     alt="brand logo"
                     css={`
                       width: 100%;
